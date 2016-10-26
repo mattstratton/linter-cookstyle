@@ -1,17 +1,17 @@
 {
   "name": "linter-cookstyle",
   "version": "0.0.0",
-  "description": "Lint `cookstyle` on the fly, using foodcritic",
+  "description": "Lint `cookstyle` on the fly, using cookstyle",
   "engines": {
     "atom": "*"
   },
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/JeremyHeleine/language-mylanguage.git"
+    "url": "https://github.com/mattstratton/linter-cookstyle.git"
   },
   "bugs": {
-    "url": "https://github.com/JeremyHeleine/language-mylanguage/issues"
+    "url": "https://github.com/mattstratton/linter-cookstyle/issues"
   },
   "license": "MIT"
 }
