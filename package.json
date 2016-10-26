@@ -1,11 +1,22 @@
 {
   "name": "linter-cookstyle",
+  "main": "./lib/index.coffee",
   "version": "0.0.0",
   "description": "Lint `cookstyle` on the fly, using cookstyle",
   "engines": {
     "atom": "*"
   },
-  "dependencies": {},
+  "dependencies": {
+    "atom-linter": "~8.0.0",
+    "escape-html": "^1.0.3"
+  },
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "1.1.0": "provideLinter"
+      }
+    }
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/mattstratton/linter-cookstyle.git"
