@@ -1,7 +1,7 @@
 {
   "name": "linter-cookstyle",
   "main": "./lib/index.coffee",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Lint `cookstyle` on the fly, using cookstyle",
   "engines": {
     "atom": "*"
