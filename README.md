@@ -4,6 +4,8 @@ This is a [cookstyle](https://github.com/chef/cookstyle) provider for
 [linter][linter]. It will be used with files
 that have the [Chef syntax](https://atom.io/packages/language-chef).
 
+Heavily inspired by [linter-rubocop](https://atom.io/packages/linter-rubocop)
+
 ## Installation
 
 The `linter` package must be installed in order to use this plugin. If it
