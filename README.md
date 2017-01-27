@@ -1,5 +1,7 @@
 # linter-cookstyle
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/mattstratton/linter-cookstyle.svg)](https://greenkeeper.io/)
+
 This is a [cookstyle](https://github.com/chef/cookstyle) provider for
 [linter][linter]. It will be used with files
 that have the [Chef syntax](https://atom.io/packages/language-chef).
