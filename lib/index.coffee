@@ -81,5 +81,7 @@ module.exports =
         Only run linter if metadata.rb file is found somewhere in the path
         for the current file.
       '
-
+  activate: ->
+    require('atom-package-deps').install('linter-cookstyle')
+    
   provideLinter: -> linter

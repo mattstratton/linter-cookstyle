@@ -13,6 +13,8 @@ is not installed, please follow the instructions [here][linter].
 
 The `language-chef` package must also be installed in order to use this plugin. If it is not installed, please follow the instructions [here](https://atom.io/packages/language-chef)
 
+This package will attempt to install these dependent packages on your behalf, but if it is unable to do so, please install them yourself.
+
 ### `cookstyle` Installation
 
 Before using this plugin, you must ensure that `cookstyle` is installed on
