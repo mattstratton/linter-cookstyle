@@ -11,6 +11,8 @@ Heavily inspired by [linter-rubocop](https://atom.io/packages/linter-rubocop)
 The `linter` package must be installed in order to use this plugin. If it
 is not installed, please follow the instructions [here][linter].
 
+The `language-chef` package must also be installed in order to use this plugin. If it is not installed, please follow the instructions [here](https://atom.io/packages/language-chef)
+
 ### `cookstyle` Installation
 
 Before using this plugin, you must ensure that `cookstyle` is installed on
