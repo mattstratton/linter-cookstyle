@@ -1,5 +1,9 @@
 # linter-cookstyle
 
+[![Plugin installs!](https://img.shields.io/apm/dm/linter-cookstyle.svg)](https://atom.io/packages/linter-cookstyle)
+[![Package version!](https://img.shields.io/apm/v/linter-cookstyle.svg?style=flat)](https://atom.io/packages/linter-cookstyle)
+[![Dependencies!](https://david-dm.org/mattstratton/linter-cookstyle.svg)](https://david-dm.org/mattstratton/linter-cookstyle)
+
 This is a [cookstyle](https://github.com/chef/cookstyle) provider for
 [linter][linter]. It will be used with files
 that have the [Chef syntax](https://atom.io/packages/language-chef).
