@@ -11,6 +11,8 @@ DEFAULT_ARGS = [
   '--format', 'json',
   '--stdin',
   '--display-style-guide',
+  '--extra-details',
+  '--display-cop-names',
 ]
 DEFAULT_MESSAGE = 'Unknown Error'
 WARNINGS = new Set(['refactor', 'convention', 'warning'])
@@ -48,10 +50,14 @@ lint = (editor) ->
       {cop_name, location, message, severity} = offense
       {message, url} = extractUrl message
       {line, column, length} = location or DEFAULT_LOCATION
-      type: if WARNINGS.has(severity) then 'Warning' else 'Error'
-      html: formatMessage {cop_name, message, url}
+      severity: if WARNINGS.has(severity) then 'warning' else 'error'
+      description: formatMessage {cop_name, message, url}
       filePath: filePath
-      range: [[line - 1, column - 1], [line - 1, column + length - 1]]
+      location: {
+        file: filePath,
+        position: [[line - 1, column - 1], [line - 1, column + length - 1]]
+      },
+      excerpt: cop_name
 
 linter =
   name: 'cookstyle'
@@ -59,7 +65,7 @@ linter =
     'source.ruby.chef'
   ]
   scope: 'file'
-  lintOnFly: true
+  lintsOnChange: true
   lint: lint
 
 module.exports =
@@ -83,5 +89,5 @@ module.exports =
       '
   activate: ->
     require('atom-package-deps').install('linter-cookstyle')
-    
+
   provideLinter: -> linter
