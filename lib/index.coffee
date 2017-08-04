@@ -9,10 +9,10 @@ DEFAULT_ARGS = [
   '--cache', 'false',
   '--force-exclusion',
   '--format', 'json',
-  '--stdin',
   '--display-style-guide',
   '--extra-details',
   '--display-cop-names',
+  '--stdin',
 ]
 DEFAULT_MESSAGE = 'Unknown Error'
 WARNINGS = new Set(['refactor', 'convention', 'warning'])
@@ -42,7 +42,7 @@ lint = (editor) ->
   cwd = path.dirname helpers.find filePath, '.'
   stdin = editor.getText()
   stream = 'both'
-  helpers.exec(command[0], command[1..], {cwd, stdin, stream}).then (result) ->
+  helpers.exec(command[0], command[1..], {cwd, stream, stdin}).then (result) ->
     {stdout, stderr} = result
     parsed = try JSON.parse(stdout)
     throw new Error stderr or stdout unless typeof parsed is 'object'
