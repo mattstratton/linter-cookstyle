@@ -13,7 +13,7 @@
   },
   "package-deps": [
     "linter:2.0.0",
-    "language-chef"
+    "language-new-chef"
   ],
   "providedServices": {
     "linter": {
