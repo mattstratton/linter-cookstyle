@@ -62,6 +62,8 @@ lint = (editor) ->
 linter =
   name: 'cookstyle'
   grammarScopes: [
+    'source.chef.metadata',
+    'source.chef.recipes',
     'source.ruby.chef'
   ]
   scope: 'file'
